@@ -15,7 +15,7 @@ jobs:
       run: |
         npm ci
         npm run lint
-      #  # npm test
+        # npm test
         npm run build
 
     - name: Deploy
