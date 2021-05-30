@@ -23,6 +23,7 @@ module.exports = {
   ],
   rules: {
     'import/prefer-default-export': 0,
+    'import/extensions': 'off'
   },
   ignorePatterns: ['.eslintrc.js']
 };
