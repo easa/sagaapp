@@ -15,7 +15,7 @@ module.exports = {
     },
     ecmaVersion: 12,
     sourceType: 'module',
-    project: ['./tsconfig.json', './.eslintrc.js']
+    project: './tsconfig.json'
   },
   plugins: [
     'react',
