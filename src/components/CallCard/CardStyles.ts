@@ -2,18 +2,19 @@ import { makeStyles } from '@material-ui/core';
 
 const useCardStyles = makeStyles({
   card: {
-    height: 200,
-    width: 180,
-    display: 'grid',
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    placeContent: 'flex-end',
   },
   box: {
-    alignSelf: 'end',
+    // alignSelf: 'end',
     textAlign: 'center',
   },
   text: {
     background: '#0c0c0c80',
     color: '#fff',
-    display: 'inline-block',
     padding: '0 .4em',
     borderRadius: '1em',
     marginBottom: '.1em',

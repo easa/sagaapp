@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 function useAction() {
-  // TODO: read item from saga state
-  const [items, setItems] = useState<string[]>([]);
-  const onClick = function clickHandler() {
-    const newItem = '';
-    setItems([...items, newItem]);
+  const dispatch = useDispatch();
+
+  const onActionClick = function actionClickHandler() {
+    dispatch({ type: 'ADD_USER' });
   };
+
   return {
-    onClick,
+    onActionClick,
   };
 }
 

@@ -1,4 +1,53 @@
-# Getting Started with Create React App
+# A saga application
+An application to show the calls, that saves the position of calls in localStorage.
+Uses #react #react-redux #redux-saga #redux-persist #material-ui #react-draggable #ramda
+
+## Run
+
+- run this command to install dependencies : `npm install`
+- run this command to start the project : `npm start`
+
+## Page elements
+- hangup button 
+    - on click : add a new call
+- header's texts (no need to work)
+- calls
+    - draggable ([react-draggable](https://www.npmjs.com/package/react-draggable))
+    - no scroll
+    - contains just and image and the name of user
+
+## Redux elements
+- redux - saga
+- typescript
+- persistance - redux - state ([redux-persist](https://www.npmjs.com/package/redux-persist))
+
+## naming convention
+
+we are using the famous [naming convention](https://basarat.gitbook.io/typescript/styleguide)
+
+## file structure
+> the name convention is inspired by typical name conventions that are used in other online projects.
+> and the default react naming convention
+  
+    .
+    ├── components/
+    │   ├── calls/               # the box that contains the cards
+    │   ├── card/                # a single card of a call
+    │   ├── layout/              # layout of the app (header, body, action bar)
+    │   └── configureStore.ts    # all configuration related to redux, redux-saga and redux-persist
+    ├── redux/                   # Test files (alternatively `spec` or `tests`)
+    │   ├── modules/             # a set of reducers and middleware functions
+    │   ├── requests/            # a set of fake data providers to mock request to a server
+    │   ├── handler.ts           # saga's handlers
+    │   ├── saga.ts              # saga's watchers
+    │   ├── stateTypes.ts        # type definitions of actions and redux states
+    │   └── configureStore.ts    # all configuration related to redux, redux-saga and redux-persist
+    ├── helpers/                 # functions to provide static data like user and icon
+    └── ...
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

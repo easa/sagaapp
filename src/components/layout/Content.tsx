@@ -1,17 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
+import Calls from '../CallContainer';
 import Header from './Header';
-import { Calls } from '../call';
 import Actions from './Actions';
+import useContentStyle from './ContentStyles';
 
 function Layout() {
-  useEffect(() => {
-
-  }, []);
-  // const item;
+  const styles = useContentStyle();
   return (
-    <Grid container style={{ background: '#333', height: '100vh', overflow: 'hidden' }}>
-      <Grid item xs={12} sm={8} md={9}>
+    <Grid container className={styles.container}>
+      <Grid item xs={12} sm={8} md={9} className={styles.item}>
         <Header />
         <Calls />
         <Actions />

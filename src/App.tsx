@@ -1,9 +1,16 @@
 import React from 'react';
-import { Layout } from './components/layout';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { Layout } from './components/Layout';
+import { store, persister } from './redux/configureStore';
 
 function App() {
   return (
-    <Layout />
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persister}>
+        <Layout />
+      </PersistGate>
+    </Provider>
   );
 }
 
