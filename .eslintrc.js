@@ -15,7 +15,7 @@ module.exports = {
     },
     ecmaVersion: 12,
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: ['./tsconfig.json', './.eslintrc.js']
   },
   plugins: [
     'react',
@@ -24,4 +24,5 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 0,
   },
+  ignorePatterns: ['.eslintrc.js']
 };
