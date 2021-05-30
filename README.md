@@ -1,22 +1,28 @@
 # A saga application
 An application to show the calls, that saves the position of calls in localStorage.
-Uses #react #react-redux #redux-saga #redux-persist #material-ui #react-draggable #ramda
+Uses react, react-redux, redux-saga, redux-persist, material-ui, react-draggable and ramda
 
-## Run
-
-- run this command to install dependencies : `npm install`
-- run this command to start the project : `npm start`
+## status
+![test badge][testBadge]
+![page badge][pageBadge]
+## how to run
+to see the project online demo please visit https://easa.github.io/sagaapp  
+to run locally, first clone this project, then in the directory of project do as follows:
+1. run this command to install dependencies : `npm install`
+2. run this command to start the project : `npm start`
 
 ## Page elements
+This is an app with a single page (no routing). The elements on the page are:
 - hangup button 
     - on click : add a new call
-- header's texts (no need to work)
-- calls
+- header's texts (just some text, no need to work)
+- calls (this items are the cards that add to page by clicking the action button)
     - draggable ([react-draggable](https://www.npmjs.com/package/react-draggable))
     - no scroll
     - contains just and image and the name of user
 
-## Redux elements
+## Redux elements (requirements)
+
 - redux - saga
 - typescript
 - persistance - redux - state ([redux-persist](https://www.npmjs.com/package/redux-persist))
@@ -26,6 +32,7 @@ Uses #react #react-redux #redux-saga #redux-persist #material-ui #react-draggabl
 we are using the famous [naming convention](https://basarat.gitbook.io/typescript/styleguide)
 
 ## file structure
+
 > the name convention is inspired by typical name conventions that are used in other online projects.
 > and the default react naming convention
   
@@ -93,3 +100,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+[testBadge]: https://github.com/easa/sagaapp/workflows/test/badge.svg
+[pageBadge]: https://github.com/easa/sagaapp/workflows/page/badge.svg
