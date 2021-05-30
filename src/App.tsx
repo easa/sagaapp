@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { Layout } from './components/Layout';
+import Layout from './components/Layout/Content';
 import { store, persister } from './redux/configureStore';
 
 function App() {
